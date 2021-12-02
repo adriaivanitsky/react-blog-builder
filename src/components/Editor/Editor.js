@@ -14,7 +14,7 @@ export default function Editor({ title, setTitle, subtitle, setSubtitle, font, s
         <label>Subtitle</label>
       </div>
       <div className="form-control">
-        <select>
+        <select value={font} onChange={(e) => setFont(e.target.value)}>
           <option value="architect">{"Architect's Daughter"}</option>
           <option value="comforter">Comforter</option>
           <option value="fredoka">Fredoka</option>
