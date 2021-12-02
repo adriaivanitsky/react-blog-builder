@@ -28,7 +28,8 @@ export default function Editor({ title, setTitle, subtitle, setSubtitle, font, s
       </div>
       <div className="form-control">
         <label>Alignment</label>
-        <div className="radio-group">
+        <div className="radio-group" value={align} onChange={(e) => setAlign(e.target.value)}> 
+          {/*i just added a value and set it to align, and the event listener to match it */}
           <label>
             <input name="align" type="radio" value="left" />
             <i className="ri-align-left"></i>
